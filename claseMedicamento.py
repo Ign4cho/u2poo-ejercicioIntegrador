@@ -1,5 +1,4 @@
 
-
 class Medicamento:
     __idCama:int
     __idMed: int
