@@ -9,5 +9,5 @@ if __name__ == '__main__':
     mm.testMedicamentos()
 
     idc = mc.darAlta()
-    mc.
+    mm.muestraMedicamentos(idc)
 
