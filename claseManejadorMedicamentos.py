@@ -36,11 +36,11 @@ class ManejadorMedicamento:
             print('Error de tipos en la carga.')
 
     def muestraMedicamentos(self, idCama):
-        print('Medicamento      Presentación        Cantidad        Precio')
+        print('Medicamento          Presentación           Cantidad           Precio')
         totalAdeudado = 0
         for i in range(len(self.__listaMed)):
             if self.__listaMed[i].getIDCama() == idCama:
                 unMed = self.__listaMed[i]
-                print(f'{unMed.getNom}     {unMed.getPres}      {unMed.getCant}     {unMed.getPrecio}')
-                totalAdeudado += unMed.getPrecio * unMed.getCant
+                print(f'{unMed.getNom()}        {unMed.getPres()}                   {unMed.getCant()}             {unMed.getPrecio()}')
+                totalAdeudado += unMed.getPrecio() * unMed.getCant()
         print(f'Total Adeudado: {totalAdeudado}')
