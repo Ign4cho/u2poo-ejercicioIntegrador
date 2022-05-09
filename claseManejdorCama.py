@@ -1,6 +1,6 @@
 from claseCama import Cama
 import csv
-from claseManejadorMedicamentos import
+
 class ManejadorCama:
     __listaCamas = []
 
@@ -36,9 +36,9 @@ class ManejadorCama:
     def buscaPaciente(self):
         nombre = input('Ingrese el nombre del paciente que desea buscar. (Apellido, Nombre)\n ')
         bandera = True
-        i = len(self.__listaCamas)
+        i = len(self.__listaCamas)-1
         retorno = 0
-        while i >= 0 && bandera:
+        while i >= 0 and bandera:
             if nombre == self.__listaCamas[i].getNom():
                 retorno = self.__listaCamas[i]
                 bandera = False
@@ -52,9 +52,3 @@ class ManejadorCama:
         if type(paciente) == Cama:
             paciente.muestraPaciente()
         return paciente.getID()
-
-
-
-
-
-
