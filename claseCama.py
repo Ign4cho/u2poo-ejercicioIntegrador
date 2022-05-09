@@ -19,7 +19,7 @@ class Cama:
     def cargaAlta(self, fecha):
         self.__fechaAlta = str(fecha)
 
-    def getId(self):
+    def getID(self):
         return self.__idCama
 
     def getHab(self):
@@ -38,13 +38,6 @@ class Cama:
         return self.__fechaAlta
     
     def muestraPaciente(self):
-        print(f'Paciente: {self.getNom()}   Cama: {self.getId()}    Habitación{self.getHab()}')
+        print(f'Paciente: {self.getNom()}   Cama: {self.getID()}    Habitación{self.getHab()}')
         print(f'Diagnostico: {self.getDiag()}       Fecha de internación:{self.getFechaInt()}')
         print(f'Fecha de alta: {self.getFechaAlta()}')
-
-
-
-
-
-
-
