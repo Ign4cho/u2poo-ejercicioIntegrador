@@ -1,4 +1,6 @@
 
+
+
 class Medicamento:
     __idCama:int
     __idMed: int
@@ -31,8 +33,3 @@ class Medicamento:
 
     def getPrecio(self):
         return self.__precio
-
-
-
-
-
