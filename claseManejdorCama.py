@@ -48,7 +48,20 @@ class ManejadorCama:
 
     def darAlta(self):
         paciente = self.buscaPaciente()
-        paciente.cargaAlta('09/05/2022')
+        ret = 0
         if type(paciente) == Cama:
+            paciente.cargaAlta('09/05/2022')
             paciente.muestraPaciente()
-        return paciente.getID()
+            ret = paciente.getID()
+        else:
+            print("No se encontró el paciente")
+        return ret
+
+
+    def listaPacientes(self):
+        diagnostico = input('Ingrese el diagnostico que desea buscar ')
+        for pac in self.__listaCamas:
+            if diagnostico == pac.getDiag():
+                print(f'Paciente: {pac.getNom()}')
+
+
