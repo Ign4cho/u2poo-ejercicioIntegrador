@@ -8,6 +8,9 @@ if __name__ == '__main__':
     mc.testListaCama()
     mm.testMedicamentos()
 
-    idc = mc.darAlta()
-    mm.muestraMedicamentos(idc)
+    idc = mc.darAlta()              #si no se encuentra el paciente retorna 0
+    if idc != 0:
+        mm.muestraMedicamentos(idc)
+
+    mc.listaPacientes()
 
