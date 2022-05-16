@@ -44,3 +44,5 @@ class ManejadorMedicamento:
                 print(f'{unMed.getNom()}        {unMed.getPres()}                   {unMed.getCant()}             {unMed.getPrecio()}')
                 totalAdeudado += unMed.getPrecio() * unMed.getCant()
         print(f'Total Adeudado: {totalAdeudado}')
+
+        
